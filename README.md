@@ -17,9 +17,10 @@
 - We refine Imitating-Diff in the pixel space by incorporating a L1 loss weighted by a high-frequency mask, which enhances the clarity of fine-grained character details, thereby improving overall text-line readability.
 - Extensive experiments on Chinese handwritten text-line datasets validate the effectiveness of our method, demonstrating robust performance in generating stylized handwriting at the line level. 
 
-<div style="display: flex; flex-direction: column; align-items: center; ">
-<img src="assets/tgc_diff.png" style="width: 90%;">
-</div>
+<p align="center">
+<img src="assets/tgc_diff.png" style="width: 90%;" align=center>
+</p>
+
 <p align="center" style="margin-bottom: 10px;">
 Overview of the proposed TGC-Diff
 </p>
