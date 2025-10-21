@@ -37,9 +37,9 @@ mkdir .cache
 We provide Chinese text-line datasets in [Baidu Netdisk](https://pan.baidu.com/s/1egncerfRPtaHNi3JYP43cg?pwd=qgd5). Please download these datasets, uzip them and move the extracted files to ./data.
 
 ## 🐳 Model Zoo
-| Model|Baidu Netdisk|
-|---------------|-----------------------------------------|
-|Pretrained VAE plus Resnet18|[Baidu Netdisk](https://pan.baidu.com/s/1VwckEw9TN734CirfWvZgiw?pwd=pfl8)|
+|Model|Baidu Netdisk|Google Drive|
+|---------------|--------------------------------|---------|
+|Pretrained VAE plus Resnet18|[Baidu Netdisk](https://pan.baidu.com/s/1VwckEw9TN734CirfWvZgiw?pwd=pfl8)|[Google Drive](https://drive.google.com/file/d/1IAyfVImGdAPMAufQJHpBSdr-Afa2AAO_/view?usp=sharing)|
 
 **Note**:
 Please download these weights, and move them to ./.cache.
