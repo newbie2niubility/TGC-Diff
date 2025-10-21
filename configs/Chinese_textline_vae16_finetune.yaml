@@ -1,0 +1,31 @@
+train:
+  seed: 1001
+  imgs_per_batch: 10
+  snapshot_begin: 0
+  snapshot_iters: 1
+  validate_begin: 0
+  validate_iters: 1
+solver:
+  base_lr: 0.00001
+  epochs: 1000
+
+test:
+  imgs_per_batch: 48
+
+dataset:
+  data_root: './data'
+  height: 64
+  width: 2048
+  reference_num: 1
+
+dataloader: 
+  num_threads: 8
+
+model:
+  style_encoder_layers: 3
+  in_channels: 16
+  out_channels: 16
+  num_res_blocks: 1
+  num_heads: 4
+  emb_dims: 512
+
