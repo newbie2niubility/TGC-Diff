@@ -43,6 +43,8 @@ We provide Chinese text-line datasets in [Baidu Netdisk](https://pan.baidu.com/s
 
 **Note**:
 Please download these weights, and move them to ./.cache.
+The trained weights will be publicly available soon.
+
 
 ## 🏋️ Training
 - **training on Chinese text-line dataset**
