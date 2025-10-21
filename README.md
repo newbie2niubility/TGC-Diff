@@ -31,6 +31,7 @@ conda create -n tgc_diff python=3.10 -y
 conda activate tgc_diff
 # install all dependencies
 conda env create -f environment.yml
+mkdir .cache
 ```
 ## ☀️ Datasets
 We provide Chinese text-line datasets in [Baidu Netdisk](https://pan.baidu.com/s/1egncerfRPtaHNi3JYP43cg?pwd=qgd5). Please download these datasets, uzip them and move the extracted files to ./data.
@@ -42,6 +43,7 @@ We provide Chinese text-line datasets in [Baidu Netdisk](https://pan.baidu.com/s
 
 **Note**:
 Please download these weights, and move them to ./.cache.
+
 ## 🏋️ Training
 - **training on Chinese text-line dataset**
 ```Shell
