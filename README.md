@@ -33,16 +33,21 @@ conda activate tgc_diff
 conda env create -f environment.yml
 ```
 ## ☀️ Datasets
-We provide Chinese text-line datasets in [Baidu Netdisk](https://pan.baidu.com/s/1egncerfRPtaHNi3JYP43cg?pwd=qgd5) | [Google Drive](https://drive.google.com/file/d/1IAyfVImGdAPMAufQJHpBSdr-Afa2AAO_/view?usp=sharing). Please download these datasets, uzip them and move the extracted files to ./data.
+We provide Chinese text-line datasets in [Baidu Netdisk](https://pan.baidu.com/s/1egncerfRPtaHNi3JYP43cg?pwd=qgd5) | [Google Drive](https://drive.google.com/file/d/1IAyfVImGdAPMAufQJHpBSdr-Afa2AAO_/view?usp=sharing). Please download these datasets, uzip them and move the extracted files to ./data.+
+
+We provide Chinese text-line template label datasets in [Baidu Netdisk](https://pan.baidu.com/s/1z6LXt00BEU3KKl0dpxLuiQ?pwd=knax) | [Google Drive](https://drive.google.com/file/d/14uHggU_ztBvxHGevld9jF1MCKQcnIYkd/view?usp=sharing). Please download these datasets, uzip them and move the extracted files to ./template/temp_data.
+
 
 ## 🐳 Model Zoo
 |Model|Baidu Netdisk|Google Drive|
 |---------------|--------------------------------|---------|
+|Template Generation Model|[Baidu Netdisk](https://pan.baidu.com/s/102idFeSxBdrBMID-44gwhg?pwd=kdhi)|[Google Drive](https://drive.google.com/file/d/1rfH6ZFty-RQFtFf6_XwgXG8ZEx4njcvI/view?usp=sharing)|
 |Pretrained VAE plus Resnet18|[Baidu Netdisk](https://pan.baidu.com/s/1-kIoYVE2qGsto94eRe3ANg?pwd=k5fi)|[Google Drive](https://drive.google.com/file/d/1MA0ndX0kdMik11klXBfbx3MFb0wXgyP7/view?usp=sharing)|
 |Finetuned Imitating-Diff|[Baidu Netdisk](https://pan.baidu.com/s/1Bc8GpfcL1EBT2SYolRBdkw?pwd=wz4p)|[Google Drive](https://drive.google.com/file/d/1fjGTLNjXt7tVza1ORllxcuakFBWo5bZO/view?usp=sharing)|
 
+
 **Note**:
-Please download these weights. Move Pretrained VAE plus Resnet18 to ./.cache. Create a new folder ./weight and move finetuned Imitating-Diff to ./weight.
+Please download these weights. Move Template Generation Model to ./template/.  Move Pretrained VAE plus Resnet18 to ./.cache. Create a new folder ./weight and move finetuned Imitating-Diff to ./weight.
 ## 🏋️ Training
 - **training on Chinese text-line dataset**
 ```Shell
@@ -55,6 +60,17 @@ sh finetune.sh
 - **Inference on Chinese text-line dataset**
 ```Shell
 sh test_ch.sh
+```
+
+ - **training on Chinese template dataset**
+```Shell
+cd ./template
+sh train_ch_temp.sh
+ ```
+ - **Inference on Chinese template dataset**
+```Shell
+cd ./template
+sh sample.sh
  ```
 
 **Note**:
