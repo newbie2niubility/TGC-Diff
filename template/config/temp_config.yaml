@@ -1,0 +1,24 @@
+train:
+  seed: 1001
+  imgs_per_batch: 512
+  snapshot_begin: 0
+  snapshot_iters: 20
+  validate_begin: 0
+  validate_iters: 20
+solver:
+  base_lr: 0.0001
+  epochs: 200000
+
+test:
+  imgs_per_batch: 256
+
+dataset:
+  ch_train_path: './temp_data/ch_temp_train.json'
+  ch_test_path: './temp_data/ch_temp_test.json'
+  ch_vocab: './temp_data/char7358.txt'
+
+dataloader: 
+  num_threads: 0
+
+
+  
