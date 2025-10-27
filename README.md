@@ -33,7 +33,7 @@ conda activate tgc_diff
 conda env create -f environment.yml
 ```
 ## ☀️ Datasets
-We provide Chinese text-line datasets in [Baidu Netdisk](https://pan.baidu.com/s/1egncerfRPtaHNi3JYP43cg?pwd=qgd5) | [Google Drive](https://drive.google.com/file/d/1IAyfVImGdAPMAufQJHpBSdr-Afa2AAO_/view?usp=sharing). Please download these datasets, uzip them and move the extracted files to ./data.+
+We provide Chinese text-line datasets in [Baidu Netdisk](https://pan.baidu.com/s/1egncerfRPtaHNi3JYP43cg?pwd=qgd5) | [Google Drive](https://drive.google.com/file/d/1IAyfVImGdAPMAufQJHpBSdr-Afa2AAO_/view?usp=sharing). Please download these datasets, uzip them and move the extracted files to ./data.
 
 We provide Chinese text-line template label datasets in [Baidu Netdisk](https://pan.baidu.com/s/1z6LXt00BEU3KKl0dpxLuiQ?pwd=knax) | [Google Drive](https://drive.google.com/file/d/14uHggU_ztBvxHGevld9jF1MCKQcnIYkd/view?usp=sharing). Please download these datasets, uzip them and move the extracted files to ./template/temp_data.
 
